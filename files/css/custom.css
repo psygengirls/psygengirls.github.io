@@ -99,7 +99,16 @@ section {
 #getstarted {
 	justify-content:center;
 }
-#getstarted .containerx {
+
+#getstarted .containerx:nth-child(1) {
+	width:100%;
+	margin:20px;
+	font-family: 'Roboto', sans-serif;
+	font-size:2em;
+	color: #847373;
+}
+
+#getstarted .containerx:nth-child(2) {
 	width:auto;
 }
 

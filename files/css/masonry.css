@@ -44,8 +44,6 @@ h3 {
 /* Intro section */
 .intro {
   margin: 1.75em 0 .75em;
-  border-bottom: 3px double rgba(0, 0, 0, 0.05);
-  margin-bottom: 1.75em;
 }
 
 .intro h3 {
@@ -70,9 +68,9 @@ h3 {
 
 /* Masonry item */
 .masonry .brick {
-  margin-bottom: 1px;
   display: inline-block; /* Fix the misalignment of items */
   vertical-align: top; /* Keep the item on the very top */
+  margin-bottom:-3px;
 }
 
 /* Masonry image effects */
@@ -92,17 +90,24 @@ h3 {
 }
 
 .masonry.bordered .brick {
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #eee;
 }
 
-/* Gutterless masonry */
-.masonry.gutterless {
-  column-gap: 0;
+/* wallpaper masonry */
+.masonry.wallpaper{
+  column-count: 1;
 }
 
-.masonry.gutterless .brick {
+.masonry.wallpaper .brick {
+  margin-bottom: 0;
+}
+
+/* apparels masonry */
+.masonry.apparels{
+  column-count: 1;
+  background: white;
+}
+
+.masonry.apparels .brick {
   margin-bottom: 0;
 }
 
@@ -133,7 +138,6 @@ h3 {
   }
   
   .masonry.gutterless .brick {
-    margin-bottom: 1px;
   }
   
   /* Bordered masonry */
@@ -144,7 +148,6 @@ h3 {
 
   .masonry.bordered .brick {
     padding-bottom: 0px;
-    margin-bottom: 1px;
     border-bottom: 0;
   }
 }
@@ -157,7 +160,6 @@ h3 {
   }
  
   .masonry.bordered .brick {
-  border-bottom: 1px solid #303030;
   }
   
   .masonry.bordered {
@@ -180,7 +182,6 @@ h3 {
     column-count: 1;
   }
   .masonry.gutterless .brick {
-    margin-bottom: 1px;
   }
   
 /* Bordered masonry */
@@ -191,12 +192,7 @@ h3 {
 
 .masonry.bordered .brick {
   padding-bottom: 0px;
-  margin-bottom: 1px;
   border-bottom: 0;
 }
-  
-  .wrapper {
-  width:1024px;
-  }
 
 }
